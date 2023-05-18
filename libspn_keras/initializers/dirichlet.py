@@ -51,6 +51,7 @@ class Dirichlet(initializers.Initializer):
             i if i < axis else len(shape) - 1 if i == axis else i - 1
             for i in range(len(shape))
         ]
+        print("dirichlet")
         return tf.cast(tf.transpose(dirichlet_sample, perm), dtype)
 
     def get_config(self) -> dict:
