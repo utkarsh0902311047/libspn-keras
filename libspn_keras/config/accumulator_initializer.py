@@ -12,6 +12,7 @@ def set_default_accumulator_initializer(initializer: Initializer) -> None:
     Args:
         initializer: The initializer which will be used by default for sum accumulators.
     """
+    print("I reached here")
     global _DEFAULT_ACCUMULATOR_INITIALIZER
     _DEFAULT_ACCUMULATOR_INITIALIZER = initializer
 
